@@ -1,35 +1,16 @@
----
-name: Github pages test
+name: My First Workflow
+
 on:
   push:
-    branches:
-      - main
-    paths:
-      - index.html
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+   branches:
+     - main
+   paths:
+     - "index.html"
+
 jobs:
-  deploy:
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
+  hello:
     runs-on: ubuntu-latest
-    needs: jekyll-build
-    environment:
-      name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: .
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Print message
+        run: echo "Hello, GitHub Actions!"
