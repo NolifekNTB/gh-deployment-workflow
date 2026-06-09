@@ -1,5 +1,5 @@
-Link to deployed site on GitHub Pages: https://nolifekntb.github.io/gh-deployment-workflow/
+<h1> GitHub Pages Deployment </h1>
 
-Solution to the "GitHub Pages Deployment" exercise in "DevOps Projects" from roadmap.sh (https://roadmap.sh/projects/github-actions-deployment-workflow)
+Task from: https://roadmap.sh/projects/log-archive-tool
 
-test/test/test4
+A simple GitHub Actions workflow to deploy a static website to GitHub Pages.
