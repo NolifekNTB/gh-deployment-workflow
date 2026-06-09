@@ -2,8 +2,11 @@ name: Github pages test
 
 on:
  push:
-   branches: ["main"]
- workflow_dispatch:
+   branches: 
+     - main
+   paths:
+     - "index.html"
+  
 permissions:
   contents: read
   pages: write
