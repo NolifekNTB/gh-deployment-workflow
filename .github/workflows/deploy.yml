@@ -10,6 +10,10 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+    group: example-group
+    cancel-in-progress: true
+
 jobs:
   deploy:
     environment:
