@@ -2,8 +2,10 @@ name: Github pages test
 
 on:
   push:
+    branches: 
+      - main
     paths:
-      - '**.html'
+      - "index.html"
   
 permissions:
   contents: read
