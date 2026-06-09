@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
-          path: github-pages
+          path: index.html
           retention-days: 5
       - name: Configure Pages
         uses: actions/configure-pages@v5
